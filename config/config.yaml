@@ -158,9 +158,9 @@ notification:
 
     email:
       enabled: true                  # 必须是 true
-      from: "${{ secrets.EMAIL_FROM }}"
-      password: "${{ secrets.EMAIL_PASS }}"
-      to: "${{ secrets.EMAIL_TO }}"
+      from: ""
+      password: ""
+      to: ""
       smtp_server: "smtp.gmail.com"
       smtp_port: "465"
 
