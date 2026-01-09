@@ -185,9 +185,10 @@ notification:
       chat_id: ""                     # Telegram Chat ID
 
     email:
-      from: ""                        # 发件人邮箱地址
-      password: ""                    # 发件人邮箱密码或授权码
-      to: ""                          # 收件人邮箱，多个用逗号分隔
+      enabled: true                  # 必须是 true
+      from: "${{ secrets.EMAIL_FROM }}"
+      password: "${{ secrets.EMAIL_PASS }}"
+      to: "${{ secrets.EMAIL_TO }}"
       smtp_server: ""                 # SMTP 服务器（可选，留空自动识别）
       smtp_port: ""                   # SMTP 端口（可选，留空自动识别）
 
